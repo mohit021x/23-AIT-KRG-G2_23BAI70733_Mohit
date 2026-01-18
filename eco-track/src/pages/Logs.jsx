@@ -21,7 +21,7 @@ function Logs() {
   return (
     <>
       <h3>Activities having carbon footprint greater than equal to 4 : </h3>
-      <ul style={{color : "green"}}>
+      <ul style={{color : "red"}}>
         {highcarbon.map((log) => (
           <li key = {log.id}>
             {log.activity} — {log.carbon}
@@ -31,7 +31,7 @@ function Logs() {
       <br />
       <br />
       <h3>Activities having carbon footprint less than equal to 3 : </h3>
-      <ul style = {{color : "red"}}>
+      <ul style = {{color : "green"}}>
         {lowcarbon.map((log) => (
           <li key = {log.id}>
             {log.activity} — {log.carbon}
